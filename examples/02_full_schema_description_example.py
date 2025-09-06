@@ -18,7 +18,7 @@ mcp = FastApiMCP(
     describe_all_responses=True,  # Describe all the possible responses instead of just the success (2XX) response
 )
 
-mcp.mount()
+mcp.mount_http()
 
 if __name__ == "__main__":
     import uvicorn

@@ -10,7 +10,7 @@ from fastapi_mcp import FastApiMCP
 setup_logging()
 
 mcp = FastApiMCP(app)  # Add MCP server to the FastAPI app
-mcp.mount()  # MCP server
+mcp.mount_http()  # MCP server
 
 
 # This endpoint will not be registered as a tool, since it was added after the MCP instance was created

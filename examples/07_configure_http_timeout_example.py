@@ -14,7 +14,7 @@ setup_logging()
 
 
 mcp = FastApiMCP(app, http_client=httpx.AsyncClient(timeout=20))
-mcp.mount()
+mcp.mount_http()
 
 
 if __name__ == "__main__":

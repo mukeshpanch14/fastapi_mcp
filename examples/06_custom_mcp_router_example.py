@@ -17,7 +17,7 @@ mcp = FastApiMCP(app)
 
 # Mount the MCP server to a specific router.
 # It will now only be available at `/other/route/mcp`
-mcp.mount(other_router)
+mcp.mount_http(other_router)
 
 
 if __name__ == "__main__":

@@ -9,7 +9,7 @@ setup_logging()
 mcp = FastApiMCP(app)
 
 # Mount the MCP server to the FastAPI app
-mcp.mount()
+mcp.mount_http()
 
 
 if __name__ == "__main__":
